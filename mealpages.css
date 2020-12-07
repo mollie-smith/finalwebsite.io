@@ -1,6 +1,7 @@
 body{width:90%;
 background:#FFFACD;
 margin:auto;
+margin-bottom: 10px;
 font: 12px/14px arvo }
 }
 
@@ -50,6 +51,11 @@ clear:both;
 text-align:center;
 font: 20px/22px arvo 
 }
+h3{color:black;
+  padding:10px;
+clear:both;
+text-align:center;
+font: 20px/22px arvo;}
 
 iframe {
           
@@ -70,8 +76,8 @@ li {font-size: 12pt;
   position: relative;
   width: 400px;
   background: #FFFACD;
-  padding: 20px 30px;
-  border: 1px solid #444;
+  padding: 20px 20px;
+  border: 1px solid silver;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -82,14 +88,14 @@ li {font-size: 12pt;
   display: none;
 }
 .container .text{
-  font-size: 25px;
+  font: 20px/22px arvo;
   color: black;
   font-weight: 500;
 }
 .container .edit{
   position: absolute;
   right: 10px;
-  top: 5px;
+  top: 10px;
   font-size: 16px;
   color: black;
   font-weight: 500;
@@ -102,11 +108,11 @@ li {font-size: 12pt;
   display: none;
 }
 .star-widget label{
-  font-size: 40px;
+  font-size: 35px;
   color: #444;
   padding: 10px;
   float: right;
-  transition: all 0.2s ease;
+  transition: all 0.5s ease;
 }
 input:not(:checked) ~ label:hover,
 input:not(:checked) ~ label:hover ~ label{
@@ -118,21 +124,37 @@ input:checked ~ label{
 input#rate-5:checked ~ label{
   color: #fe7;
   text-shadow: 0 0 20px #952;
+  padding: 10px;
 }
 #rate-1:checked ~ form header:before{
-  content: "It wasn't good at all 😠";
+  content: "It was disgusting!";
+  color: black;
+  padding: 5px;
+  font: 20px/22px arvo;
 }
 #rate-2:checked ~ form header:before{
-  content: "It was not so good 😒";
+  content: "It was not good!";
+  color: black;
+  padding: 5px;
+  font: 20px/22px arvo;
 }
 #rate-3:checked ~ form header:before{
-  content: "It was good 😄";
+  content: "I'm indifferent.";
+  color: black;
+  padding: 5px;
+  font: 20px/22px arvo;
 }
 #rate-4:checked ~ form header:before{
-  content: "It was great 😎";
+  content: "It was great!";
+  color: black;
+  padding: 5px;
+  font: 20px/22px arvo;
 }
 #rate-5:checked ~ form header:before{
-  content: "It was delicious 😍";
+  content: "It was delicious!";
+  color: black;
+  padding: 5px;
+  font: 20px/22px arvo;
 }
 .container form{
   display: none;
@@ -158,15 +180,18 @@ form .textarea textarea{
   height: 100%;
   width: 100%;
   outline: none;
-  color: #eee;
+  color: black;
   border: 1px solid silver;
   background: #FFDAB9;
   padding: 10px;
-  font-size: 17px;
+  font: 16px arvo;;
   resize: none;
 }
 .textarea textarea:focus{
   border-color: #444;
+}
+form .textarea textarea:hover{
+  background: #ffa658;
 }
 form .btn{
   height: 45px;
@@ -176,18 +201,18 @@ form .btn{
 form .btn button{
   height: 100%;
   width: 100%;
-  border: 1px solid #444;
+  border: 1px solid silver;
   outline: none;
-  background: #222;
-  color: #999;
-  font-size: 17px;
+  background: #FFDAB9;
+  color: black;
+  font: 16px arvo;
   font-weight: 500;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 form .btn button:hover{
-  background: #1b1b1b;
+  background: #ffa658;
 }
 .highlights{width: 30%
 	margin:auto;
