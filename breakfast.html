@@ -89,7 +89,7 @@
     <center><h3><u>Did you enjoy the recipe?</u></h3>
         <center><div class="container">
       <div class="post">
-        <br><div class="text">Thank you for rating us and sharing your thoughts on the recipe!</div></br>
+        <br><div class="text">Thank you for your thoughts on the recipe!</div></br>
         <br><div class="edit">Edit here!</div></br>
       </div>
       <div class="star-widget">
@@ -121,12 +121,14 @@
     var widget = document.querySelector(".star-widget");
     var editBtn = document.querySelector(".edit");
     
-        btn.onclick = ()=>{
-            widget.style.display = "none";
-            post.style.display = "block";
-        editBtn.onclick = ()=>{
-            widget.style.display = "block";
-            post.style.display = "none";
+    btn.onclick = ()=>{
+        widget.style.display = "none";
+        post.style.display = "block";
+        alert ("You have successfully submited your response!")
+    editBtn.onclick = ()=>{
+          widget.style.display = "block";
+          post.style.display = "none";
+          alert ("Are you sure you want to go back?")
         }
         return false;
       }
