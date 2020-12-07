@@ -2,8 +2,6 @@
 <html>
     <head>
     <link rel="stylesheet" type="text/css" href="mealpages.css">
-    <html lang="en" dir="ltr">
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <title> Qwick n'EZ Bytes</title>
@@ -83,8 +81,8 @@
      <center><h3><u>Did you enjoy the recipe?</u></h3>
         <center><div class="container">
       <div class="post">
-        <div class="text">Thanks for rating us!</div>
-        <div class="edit">EDIT</div>
+        <br><div class="text">Thank you for rating us and sharing your experience!</div></br>
+        <br><div class="edit">Edit here!</div></br>
       </div>
       <div class="star-widget">
         <input type="radio" name="rate" id="rate-5">
@@ -100,7 +98,7 @@
         <form action="#">
           <header></header>
           <div class="textarea">
-            <textarea cols="30" placeholder="Describe your experience.."></textarea>
+            <textarea cols="30" placeholder="Type here...."></textarea>
           </div>
           <div class="btn">
             <button type="submit">Post</button>
@@ -110,10 +108,11 @@
     </div>
   <script>
     ///Main page configuration:
-   const btn = document.querySelector("button");
-      const post = document.querySelector(".post");
-      const widget = document.querySelector(".star-widget");
-      const editBtn = document.querySelector(".edit");
+    var btn = document.querySelector("button");
+    var post = document.querySelector(".post");
+    var widget = document.querySelector(".star-widget");
+    var editBtn = document.querySelector(".edit");
+    
       btn.onclick = ()=>{
         widget.style.display = "none";
         post.style.display = "block";
